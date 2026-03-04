@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import './index.css';
 
 export default function App() {
   const lastChampionsDate = new Date("2015-06-06T21:00:00");
@@ -45,16 +46,21 @@ export default function App() {
 
   return (
     <div
-      style={{
-        textAlign: "center",
-        marginTop: "40px",
-        fontFamily: "Arial",
-        padding: "20px",
-        minHeight: "100vh",
-        background: "linear-gradient(180deg, #0b1d3a, #1e3a8a)",
-        color: "#ffffff"
-      }}
-    >
+  style={{
+    minHeight: "100vh",
+    width: "100vw",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "flex-start",
+    textAlign: "center",
+    fontFamily: "Arial",
+    padding: "40px 20px",
+    background: "linear-gradient(180deg, #0b1d3a, #1e3a8a)",
+    color: "#ffffff",
+    margin: 0
+  }}
+>
       <h1 style={{ color: "#a50044" }}>
         🏆 Días desde la última Champions del Barça
       </h1>
